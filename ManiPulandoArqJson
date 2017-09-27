@@ -6,3 +6,8 @@ print (registro)
 f = open('datafile.json', 'w')
 json.dump(registro,f,indent=4)
 f.close
+
+#ler arquivo json
+f = open('datafile.json', 'r')
+e = json.load(f)
+print(e)
